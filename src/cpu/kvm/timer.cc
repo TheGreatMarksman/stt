@@ -60,11 +60,14 @@
 #define sigev_notify_thread_id     _sigev_un._tid
 #endif
 
+/* Added the if not defined because previously defined as extern */
+#ifndef SYS_gettid
 static pid_t
 gettid()
 {
     return syscall(__NR_gettid);
 }
+#endif
 
 /**
  * Minimum number of cycles that a host can spend in a KVM call (used

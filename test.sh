@@ -12,6 +12,13 @@ for BENCHMARK in "${BENCHMARKS[@]}"; do
     make -C "$BASE_DIR/microbenchmark/$BENCHMARK" benchX86
     for THREAT in "${THREAT_MODEL[@]}"; do
         for STT_VALUE in "${STT[@]}"; do
+
+            # STT cannot be 1 for UnsafeBaseline
+            if [[ "$THREAT" == "UnsafeBaseline" && "$STT_VALUE" -eq 1 ]]; then
+                echo "Skipping $BENCHMARK with $THREAT and STT=1 (invalid configuration)"
+                continue
+            fi
+
             echo "Running $BENCHMARK with threat model $THREAT and STT value $STT_VALUE..."
             "$BASE_DIR/scripts/run_benchmark.sh" "$BENCHMARK" "$THREAT" "$STT_VALUE" &
         done

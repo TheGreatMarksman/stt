@@ -3,14 +3,13 @@ make: Entering directory '/data/home/med14/stt/microbenchmark/CCa'
 gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
 make: Leaving directory '/data/home/med14/stt/microbenchmark/CCa'
 Running CCa with threat model UnsafeBaseline and STT value 0...
-Running CCa with threat model UnsafeBaseline and STT value 1...
+Skipping CCa with UnsafeBaseline and STT=1 (invalid configuration)
 Running CCa with threat model Spectre and STT value 0...
 Running CCa with threat model Spectre and STT value 1...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running CCa with threat model Futuristic and STT value 0...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running CCa with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
@@ -18,28 +17,10 @@ make: Entering directory '/data/home/med14/stt/microbenchmark/CCl'
 gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   CCa
-GEM5_PATH:   /data/home/med14/stt
 BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
-BENCHMARK:   CCa
 THREAT_MODEL:      UnsafeBaseline
-BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      0
 STT_VALUE:      0
 OUTPUT_DIR:  /data/home/med14/stt/output/CCa/UnsafeBaseline/STT_0
-OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Spectre/STT_0
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   CCa
-BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/CCa/UnsafeBaseline/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   CCa
-BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
-THREAT_MODEL:      Futuristic
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Futuristic/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   CCa
 BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
@@ -48,16 +29,27 @@ STT_VALUE:      1
 OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Spectre/STT_1
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   CCa
+GEM5_PATH:   /data/home/med14/stt
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+BENCHMARK:   CCa
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+THREAT_MODEL:      Spectre
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Futuristic/STT_0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCa
 BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
 THREAT_MODEL:      Futuristic
 STT_VALUE:      1
 OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Futuristic/STT_1
 make: Leaving directory '/data/home/med14/stt/microbenchmark/CCl'
 Running CCl with threat model UnsafeBaseline and STT value 0...
-Running CCl with threat model UnsafeBaseline and STT value 1...
+Skipping CCl with UnsafeBaseline and STT=1 (invalid configuration)
 Running CCl with threat model Spectre and STT value 0...
 Running CCl with threat model Spectre and STT value 1...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running CCl with threat model Futuristic and STT value 0...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running CCl with threat model Futuristic and STT value 1...
@@ -72,8 +64,8 @@ BENCHMARK:   CCl
 BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
 THREAT_MODEL:      UnsafeBaseline
 STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0
 GEM5_PATH:   /data/home/med14/stt
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0
 BENCHMARK:   CCl
 BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
 THREAT_MODEL:      Spectre
@@ -84,51 +76,31 @@ GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   CCl
 BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
 BENCHMARK:   CCl
-THREAT_MODEL:      Spectre
-STT_VALUE:      1
-BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
-OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Spectre/STT_1
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/CCl/UnsafeBaseline/STT_1
-GEM5_PATH:   /data/home/med14/stt
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   CCl
-BENCHMARK:   CCl
-BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
-BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
 THREAT_MODEL:      Futuristic
-THREAT_MODEL:      Futuristic
+GEM5_PATH:   /data/home/med14/stt
 STT_VALUE:      0
-STT_VALUE:      1
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+BENCHMARK:   CCl
 OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Futuristic/STT_0
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+THREAT_MODEL:      Spectre
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+STT_VALUE:      1
 OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Futuristic/STT_1
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Spectre/STT_1
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593977
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619564
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593980
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -136,13 +108,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593975
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619566
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -150,13 +122,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593984
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619570
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -164,188 +136,52 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593982
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619562
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
+Info: simulation uses threatModel: Spectre; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0Program aborted at tick 
-0
---- BEGIN LIBC BACKTRACE ---
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x558aa7c6c490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55cdd2eb1490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x558aa7c7f25e]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55cdd2ec425e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f73a914a420]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f4666fcf420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f73a86df00b]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f466656400b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f73a86be859]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f4666543859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f73a86be729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f4666543729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f73a86cffd6]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f4666554fd6]
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x558aa7d48942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55cdd2f8d517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55745f481490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x558aa7d0b97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55cdd2f5097c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55745f49425e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f92366ac420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f9235c4100b]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x558aa812eb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55cdd3373b93]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f9235c20859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f9235c20729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f9235c31fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x558aa7cd2a9e]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55cdd2f17a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f73a924f353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f46670d4353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f73a924e4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f46670d34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f73a924e4f9]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55745f55d517]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f46670d34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f73a9250bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f46670d5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f73a924e1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f46670d31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f73a924e4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f46670d34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f73a9250bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f46670d5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f73a9250d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f46670d5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f73a924d7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f46670d27a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f73a9250bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f46670d5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f73a924e1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f46670d31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f73a9250bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f46670d5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f73a9250d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f46670d5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f73a926b03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f46670f003e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f73a926bed6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f46670f0ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55745f52097c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x558aa7c7ceeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55cdd2ec1eeb]
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55745f943b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x558aa7b103f7]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55cdd2d553f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f73a86c0083]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f4666545083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55745f4e7a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f92367b1353]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x558aa7b34ade]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f92367b04f9]
---- END LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55cdd2d79ade]
---- END LIBC BACKTRACE ---
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f92367b04f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f92367b2bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f92367b01cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f92367b04f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f92367b2bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f92367b2d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f92367af7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f92367b2bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f92367b01cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f92367b2bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f92367b2d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f92367cd03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f92367cded6]
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55745f491eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55745f3253f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f9235c22083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55745f349ade]
---- END LIBC BACKTRACE ---
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3593974
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619567
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
 warn: Sockets disabled, not accepting gdb connections
 warn: Sockets disabled, not accepting gdb connections
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x561451bf5490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x561451c0825e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f1be9bdd420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f1be917200b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f1be9151859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f1be9151729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f1be9162fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x561451cd1517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x561451c9497c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5614520b7b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x561451c5ba9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f1be9ce2353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f1be9ce14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f1be9ce14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f1be9ce3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f1be9ce11cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f1be9ce14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f1be9ce3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f1be9ce3d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f1be9ce07a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f1be9ce3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f1be9ce11cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f1be9ce3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f1be9ce3d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f1be9cfe03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f1be9cfeed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x561451c05eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x561451a993f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f1be9153083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x561451abdade]
---- END LIBC BACKTRACE ---
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
 make: Leaving directory '/data/home/med14/stt/microbenchmark/DP1f'
 Running DP1f with threat model UnsafeBaseline and STT value 0...
-Running DP1f with threat model UnsafeBaseline and STT value 1...
+Skipping DP1f with UnsafeBaseline and STT=1 (invalid configuration)
 Running DP1f with threat model Spectre and STT value 0...
 Running DP1f with threat model Spectre and STT value 1...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running DP1f with threat model Futuristic and STT value 0...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running DP1f with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
@@ -353,30 +189,6 @@ Running DP1f with threat model Futuristic and STT value 1...
 make: Entering directory '/data/home/med14/stt/microbenchmark/ED1'
 gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
 GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   DP1f
-BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_0
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   DP1f
-BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   DP1f
-BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   DP1f
-BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
-THREAT_MODEL:      Futuristic
-STT_VALUE:      0
-GEM5_PATH:   /data/home/med14/stt
-OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Futuristic/STT_0
 BENCHMARK:   DP1f
 BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
 THREAT_MODEL:      UnsafeBaseline
@@ -388,18 +200,36 @@ BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
 THREAT_MODEL:      Futuristic
 STT_VALUE:      1
 OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Futuristic/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+GEM5_PATH:   /data/home/med14/stt
+THREAT_MODEL:      Spectre
+BENCHMARK:   DP1f
+STT_VALUE:      0
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_0
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Futuristic/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_1
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594028
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619611
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -407,13 +237,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594025
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619613
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -421,240 +251,72 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594029
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619610
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
+Info: simulation uses threatModel: Futuristic; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x558c910b9490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x558c910cc25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f3c1f5c9420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f3c1eb5e00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f3c1eb3d859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f3c1eb3d729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f3c1eb4efd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x558c91195942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x558c9115897c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x558c9157bb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x558c9111fa9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f3c1f6ce353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3c1f6cd4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3c1f6cd4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3c1f6cfbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f3c1f6cd1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3c1f6cd4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3c1f6cfbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f3c1f6cfd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f3c1f6cc7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3c1f6cfbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f3c1f6cd1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3c1f6cfbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f3c1f6cfd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f3c1f6ea03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f3c1f6eaed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x558c910c9eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x558c90f5d3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f3c1eb3f083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x558c90f81ade]
---- END LIBC BACKTRACE ---
-Info: simulation uses threatModel: Spectre; needsTSO=1
+Info: simulation uses threatModel: Spectre; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594024
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619606
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x555ff970a490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x555ff971d25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f9b0b03b420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f9b0a5d000b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f9b0a5af859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f9b0a5af729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f9b0a5c0fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x555ff97e6517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x555ff97a997c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x555ff9bccb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x555ff9770a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f9b0b140353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f9b0b13f4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f9b0b13f4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f9b0b141bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f9b0b13f1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f9b0b13f4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f9b0b141bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f9b0b141d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f9b0b13e7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f9b0b141bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f9b0b13f1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f9b0b141bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f9b0b141d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f9b0b15c03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f9b0b15ced6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x555ff971aeeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x555ff95ae3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f9b0a5b1083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x555ff95d2ade]
---- END LIBC BACKTRACE ---
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594030
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: Sockets disabled, not accepting gdb connections
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55dd37604490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55dd3761725e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fe364b14420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fe3640a900b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fe364088859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fe364088729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fe364099fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55dd376e0517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55dd376a397c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55dd37ac6b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55dd3766aa9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7fe364c19353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe364c184f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe364c184f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe364c1abd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe364c181cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe364c184f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe364c1abd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe364c1ad8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7fe364c177a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe364c1abd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe364c181cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe364c1abd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe364c1ad8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7fe364c3503e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7fe364c35ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55dd37614eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55dd374a83f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fe36408a083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55dd374ccade]
---- END LIBC BACKTRACE ---
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
 warn: Sockets disabled, not accepting gdb connections
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594022
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619607
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
 make: Leaving directory '/data/home/med14/stt/microbenchmark/ED1'
 Running ED1 with threat model UnsafeBaseline and STT value 0...
-Running ED1 with threat model UnsafeBaseline and STT value 1...
+Skipping ED1 with UnsafeBaseline and STT=1 (invalid configuration)
 Running ED1 with threat model Spectre and STT value 0...
 Running ED1 with threat model Spectre and STT value 1...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running ED1 with threat model Futuristic and STT value 0...
 Running ED1 with threat model Futuristic and STT value 1...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Program aborted at tick Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5585e425c490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x5585e426f25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f8a5c8ed420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f8a5be8200b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f8a5be61859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f8a5be61729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f8a5be72fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x5585e4338517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x5585e42fb97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5585e471eb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x5585e42c2a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f8a5c9f2353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a5c9f14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a5c9f14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a5c9f3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f8a5c9f11cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a5c9f14f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a5c9f3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f8a5c9f3d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f8a5c9f07a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a5c9f3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f8a5c9f11cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a5c9f3bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f8a5c9f3d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f8a5ca0e03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f8a5ca0eed6]
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 make: Entering directory '/data/home/med14/stt/microbenchmark/EI'
 gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x5585e426ceeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x5585e41003f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f8a5be63083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5585e4124ade]
---- END LIBC BACKTRACE ---
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   ED1
-BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/ED1/UnsafeBaseline/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   ED1
-BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Spectre/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   ED1
-BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   ED1
 BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
@@ -664,8 +326,20 @@ OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Spectre/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   ED1
 BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   ED1
+BENCHMARK:   ED1
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      Spectre
 THREAT_MODEL:      Futuristic
 STT_VALUE:      1
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Spectre/STT_1
 OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Futuristic/STT_1
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   ED1
@@ -678,13 +352,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594083
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619647
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -692,236 +366,92 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594084
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619653
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55e3e3fdd490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55e3e3ff025e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f5a19fd7420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f5a1956c00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f5a1954b859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f5a1954b729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f5a1955cfd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55e3e40b9517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55e3e407c97c]
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594080
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619651
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55e3e449fb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55e3e4043a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f5a1a0dc353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f5a1a0db4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f5a1a0db4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f5a1a0ddbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f5a1a0db1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f5a1a0db4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f5a1a0ddbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f5a1a0ddd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f5a1a0da7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f5a1a0ddbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f5a1a0db1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f5a1a0ddbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f5a1a0ddd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f5a1a0f803e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f5a1a0f8ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55e3e3fedeeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55e3e3e813f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f5a1954d083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55e3e3ea5ade]
---- END LIBC BACKTRACE ---
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x562ecf933490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x562ecf94625e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f2207b00420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f220709500b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f2207074859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f2207074729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f2207085fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x562ecfa0f517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x562ecf9d297c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x562ecfdf5b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x562ecf999a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f2207c05353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f2207c044f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f2207c044f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f2207c06bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f2207c041cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f2207c044f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f2207c06bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f2207c06d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f2207c037a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f2207c06bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f2207c041cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f2207c06bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f2207c06d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f2207c2103e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f2207c21ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x562ecf943eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x562ecf7d73f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f2207076083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x562ecf7fbade]
---- END LIBC BACKTRACE ---
-Info: simulation uses threatModel: Spectre; needsTSO=1
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619649
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594077
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619652
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
 warn: Sockets disabled, not accepting gdb connections
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594079
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5643301f4490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x56433020725e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fd724033420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fd7235c800b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fd7235a7859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fd7235a7729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fd7235b8fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x5643302d0517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x56433029397c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5643306b6b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x56433025aa9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7fd724138353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fd7241374f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fd7241374f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fd724139bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fd7241371cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fd7241374f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fd724139bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fd724139d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7fd7241367a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fd724139bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fd7241371cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fd724139bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fd724139d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7fd72415403e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7fd724154ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x564330204eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x5643300983f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fd7235a9083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5643300bcade]
---- END LIBC BACKTRACE ---
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55633d4dc490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55633d4ef25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f85586e5420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f8557c7a00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f8557c59859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f8557c59729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f8557c6afd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x55633d5b8942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55633d57b97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55633d99eb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55633d542a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f85587ea353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f85587e94f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f85587e94f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f85587ebbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f85587e91cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f85587e94f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f85587ebbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f85587ebd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f85587e87a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f85587ebbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f85587e91cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f85587ebbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f85587ebd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f855880603e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f8558806ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55633d4eceeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55633d3803f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f8557c5b083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55633d3a4ade]
---- END LIBC BACKTRACE ---
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:49
-gem5 executing on ARCH-750, pid 3594087
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
 warn: Sockets disabled, not accepting gdb connections
 make: Leaving directory '/data/home/med14/stt/microbenchmark/EI'
 Running EI with threat model UnsafeBaseline and STT value 0...
-Running EI with threat model UnsafeBaseline and STT value 1...
+Skipping EI with UnsafeBaseline and STT=1 (invalid configuration)
 Running EI with threat model Spectre and STT value 0...
 Running EI with threat model Spectre and STT value 1...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running EI with threat model Futuristic and STT value 0...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running EI with threat model Futuristic and STT value 1...
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 make: Entering directory '/data/home/med14/stt/microbenchmark/MI'
 gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   EI
 BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
@@ -931,21 +461,9 @@ OUTPUT_DIR:  /data/home/med14/stt/output/EI/UnsafeBaseline/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   EI
 BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-GEM5_PATH:   /data/home/med14/stt
-OUTPUT_DIR:  /data/home/med14/stt/output/EI/UnsafeBaseline/STT_1
-BENCHMARK:   EI
-BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
 THREAT_MODEL:      Spectre
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_0
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   EI
-BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
-THREAT_MODEL:      Futuristic
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/EI/Futuristic/STT_0
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_1
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   EI
 BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
@@ -955,21 +473,21 @@ OUTPUT_DIR:  /data/home/med14/stt/output/EI/Futuristic/STT_1
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   EI
 BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_1
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Futuristic/STT_0
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594137
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619711
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -977,13 +495,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594139
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619714
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -991,141 +509,13 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594133
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619706
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5653d0dd1490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x5653d0de425e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7faf1d7fc420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7faf1cd9100b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7faf1cd70859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7faf1cd70729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7faf1cd81fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x5653d0ead517]
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x5653d0e7097c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x557891e5d490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5653d1293b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x557891e7025e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f387b74d420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f387ace200b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f387acc1859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f387acc1729]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x5653d0e37a9e]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f387acd2fd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7faf1d901353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faf1d9004f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faf1d9004f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faf1d902bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7faf1d9001cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faf1d9004f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faf1d902bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7faf1d902d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7faf1d8ff7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faf1d902bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7faf1d9001cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faf1d902bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7faf1d902d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7faf1d91d03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7faf1d91ded6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x557891f39517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x5653d0de1eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x557891efc97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x5653d0c753f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7faf1cd72083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55789231fb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5653d0c99ade]
---- END LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x557891ec3a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f387b852353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f387b8514f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f387b8514f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f387b853bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f387b8511cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f387b8514f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f387b853bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f387b853d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f387b8507a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f387b853bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f387b8511cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f387b853bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f387b853d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f387b86e03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f387b86eed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x557891e6deeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x557891d013f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f387acc3083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x557891d25ade]
---- END LIBC BACKTRACE ---
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55d529636490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55d52964925e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fca81fbf420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fca8155400b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fca81533859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fca81533729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fca81544fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x55d529712942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55d5296d597c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55d529af8b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55d52969ca9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7fca820c4353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fca820c34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fca820c34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fca820c5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fca820c31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fca820c34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fca820c5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fca820c5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7fca820c27a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fca820c5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fca820c31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fca820c5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fca820c5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7fca820e003e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7fca820e0ed6]
-info: Entering event queue @ 0.  Starting simulation...
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55d529646eeb]
-**** REAL SIMULATION ****
-warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55d5294da3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fca81535083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55d5294feade]
---- END LIBC BACKTRACE ---
-info: Entering event queue @ 0.  Starting simulation...
-**** REAL SIMULATION ****
-warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594135
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
@@ -1133,89 +523,141 @@ gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594140
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619707
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-warn: x86 cpuid family 0x0000: unimplemented function 13
-Info: simulation uses threatModel: Spectre; needsTSO=1
+Info: simulation uses threatModel: Spectre; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
 warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594143
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619710
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
 
 info: Standard input is not a terminal, disabling listeners.
 **********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
 **********
 Global frequency set at 1000000000000 ticks per second
-Info: simulation uses threatModel: Futuristic; needsTSO=1
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619785
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619783
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619792
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619790
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619788
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
 applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
 warn: Sockets disabled, not accepting gdb connections
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-warn: Sockets disabled, not accepting gdb connections
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55dd4323a490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55dd4324d25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7ff06275c420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7ff061cf100b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7ff061cd0859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7ff061cd0729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7ff061ce1fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55dd43316517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55dd432d997c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55dd436fcb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55dd432a0a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7ff062861353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7ff0628604f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7ff0628604f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7ff062862bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7ff0628601cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7ff0628604f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7ff062862bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7ff062862d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7ff06285f7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7ff062862bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7ff0628601cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7ff062862bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7ff062862d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7ff06287d03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7ff06287ded6]
-warn: x86 cpuid family 0x0000: unimplemented function 13
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55dd4324aeeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55dd430de3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7ff061cd2083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55dd43102ade]
---- END LIBC BACKTRACE ---
 make: Leaving directory '/data/home/med14/stt/microbenchmark/MI'
 Running MI with threat model UnsafeBaseline and STT value 0...
-Running MI with threat model UnsafeBaseline and STT value 1...
+Skipping MI with UnsafeBaseline and STT=1 (invalid configuration)
 Running MI with threat model Spectre and STT value 0...
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running MI with threat model Spectre and STT value 1...
-info: Increasing stack size by one page.
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 Running MI with threat model Futuristic and STT value 0...
+warn: Sockets disabled, not accepting gdb connections
 Running MI with threat model Futuristic and STT value 1...
-warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
 /bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
-/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+warn: Sockets disabled, not accepting gdb connections
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   MI
 BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
@@ -1225,15 +667,9 @@ OUTPUT_DIR:  /data/home/med14/stt/output/MI/UnsafeBaseline/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   MI
 BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
-THREAT_MODEL:      UnsafeBaseline
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/MI/UnsafeBaseline/STT_1
-GEM5_PATH:   /data/home/med14/stt
-BENCHMARK:   MI
-BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
-THREAT_MODEL:      Spectre
-STT_VALUE:      1
-OUTPUT_DIR:  /data/home/med14/stt/output/MI/Spectre/STT_1
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Futuristic/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   MI
 BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
@@ -1243,261 +679,179 @@ OUTPUT_DIR:  /data/home/med14/stt/output/MI/Spectre/STT_0
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   MI
 BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
-THREAT_MODEL:      Futuristic
-STT_VALUE:      0
-OUTPUT_DIR:  /data/home/med14/stt/output/MI/Futuristic/STT_0
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Spectre/STT_1
 GEM5_PATH:   /data/home/med14/stt
 BENCHMARK:   MI
 BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
 THREAT_MODEL:      Futuristic
 STT_VALUE:      1
 OUTPUT_DIR:  /data/home/med14/stt/output/MI/Futuristic/STT_1
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619923
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619919
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619914
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619925
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619929
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
 info: Increasing stack size by one page.
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594243
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594242
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+info: Increasing stack size by one page.
+warn: ignoring syscall mprotect(...)
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5636843db490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x5636843ee25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f3517db8420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f351734d00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f351732c859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f351732c729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f351733dfd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x5636844b7517]
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x56368447a97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x562e4e966490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x56368489db93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x562e4e97925e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f612bfa8420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f612b53d00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f612b51c859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f612b51c729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f612b52dfd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x563684441a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f3517ebd353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3517ebc4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3517ebc4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3517ebebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f3517ebc1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f3517ebc4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3517ebebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f3517ebed8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f3517ebb7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3517ebebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f3517ebc1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f3517ebebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f3517ebed8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f3517ed903e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f3517ed9ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x562e4ea42942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x5636843ebeeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x562e4ea0597c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x56368427f3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f351732e083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x562e4ee28b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5636842a3ade]
---- END LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x562e4e9cca9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f612c0ad353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f612c0ac4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f612c0ac4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f612c0aebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f612c0ac1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f612c0ac4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f612c0aebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f612c0aed8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f612c0ab7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f612c0aebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f612c0ac1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f612c0aebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f612c0aed8a]
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f612c0c903e]
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594248
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f612c0c9ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x562e4e976eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x562e4e80a3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f612b51e083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x562e4e82eade]
---- END LIBC BACKTRACE ---
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+info: Increasing stack size by one page.
+Exiting @ tick 43075500 because exiting with last active thread context
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+Exiting @ tick 40926500 because exiting with last active thread context
+Exiting @ tick 38466500 because exiting with last active thread context
+Exiting @ tick 38613500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 37514500 because exiting with last active thread context
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-warn: Sockets disabled, not accepting gdb connections
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594240
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
 warn: x86 cpuid family 0x0000: unimplemented function 13
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594250
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55ac92ec2490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55ac92ed525e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7faa368ef420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7faa35e8400b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7faa35e63859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7faa35e63729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7faa35e74fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55ac92f9e517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55ac92f6197c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55ac93384b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55ac92f28a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7faa369f4353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faa369f34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faa369f34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faa369f5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7faa369f31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7faa369f34f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faa369f5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7faa369f5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7faa369f27a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faa369f5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7faa369f31cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7faa369f5bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7faa369f5d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7faa36a1003e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7faa36a10ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55ac92ed2eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55ac92d663f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7faa35e65083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55ac92d8aade]
---- END LIBC BACKTRACE ---
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
 warn: x86 cpuid family 0x0000: unimplemented function 13
-warn: Sockets disabled, not accepting gdb connections
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594246
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x55a93e6a1490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x55a93e6b425e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fe543558420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fe542aed00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fe542acc859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fe542acc729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fe542addfd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x55a93e77d517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x55a93e74097c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x55a93eb63b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x55a93e707a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7fe54365d353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe54365c4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe54365c4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe54365ebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe54365c1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe54365c4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe54365ebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe54365ed8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7fe54365b7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe54365ebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe54365c1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe54365ebd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe54365ed8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7fe54367903e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7fe543679ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x55a93e6b1eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x55a93e5453f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fe542ace083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x55a93e569ade]
---- END LIBC BACKTRACE ---
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: ignoring syscall mprotect(...)
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
@@ -1507,319 +861,189 @@ warn: readlink() called on '/proc/self/exe' may yield unexpected results in vari
 info: Increasing stack size by one page.
 info: Increasing stack size by one page.
 warn: ignoring syscall mprotect(...)
-info: Increasing stack size by one page.
 warn: ignoring syscall mprotect(...)
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594299
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594291
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/UnsafeBaseline/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594295
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:451: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `protectionEnabled' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5639cb75f490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x5639cb77225e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f7fb902a420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f7fb85bf00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f7fb859e859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f7fb859e729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f7fb85affd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1fc2)[0x5639cb83b942]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x5639cb7fe97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5639cbc21b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x5639cb7c5a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f7fb912f353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f7fb912e4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f7fb912e4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f7fb9130bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f7fb912e1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f7fb912e4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f7fb9130bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f7fb9130d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f7fb912d7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f7fb9130bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f7fb912e1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f7fb9130bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f7fb9130d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f7fb914b03e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f7fb914bed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x5639cb76feeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x5639cb6033f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f7fb85a0083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5639cb627ade]
---- END LIBC BACKTRACE ---
-warn: Sockets disabled, not accepting gdb connections
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594297
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Futuristic; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x559a46fbe490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x559a46fd125e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f8a90d77420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f8a9030c00b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f8a902eb859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f8a902eb729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f8a902fcfd6]
+Exiting @ tick 43785500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 33663500 because exiting with last active thread context
+Exiting @ tick 32587500 because exiting with last active thread context
+Exiting @ tick 35168500 because exiting with last active thread context
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x559a4709a517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x559a4705d97c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x559a47480b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x559a47024a9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f8a90e7c353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a90e7b4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a90e7b4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a90e7dbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f8a90e7b1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f8a90e7b4f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a90e7dbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f8a90e7dd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f8a90e7a7a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a90e7dbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f8a90e7b1cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f8a90e7dbd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f8a90e7dd8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f8a90e9803e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f8a90e98ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x559a46fceeeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x559a46e623f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f8a902ed083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x559a46e86ade]
---- END LIBC BACKTRACE ---
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594286
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=UnsafeBaseline; STT=0; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: Futuristic; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x562fc09a9490]
+warn: x86 cpuid family 0x0000: unimplemented function 13
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x562fc09bc25e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fe506483420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fe505a1800b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fe5059f7859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fe5059f7729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fe505a08fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x562fc0a85517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x562fc0a4897c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x562fc0e6bb93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x562fc0a0fa9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7fe506588353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe5065874f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe5065874f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe506589bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe5065871cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7fe5065874f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe506589bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe506589d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7fe5065867a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe506589bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7fe5065871cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7fe506589bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7fe506589d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7fe5065a403e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7fe5065a4ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x562fc09b9eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x562fc084d3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fe5059f9083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x562fc0871ade]
---- END LIBC BACKTRACE ---
-gem5.opt: build/X86_MESI_Two_Level/cpu/o3/cpu.cc:453: FullO3CPU<Impl>::FullO3CPU(DerivO3CPUParams*) [with Impl = O3CPUImpl]: Assertion `STT' failed.
-Info: simulation uses threatModel: UnsafeBaseline; needsTSO=1
-applySTT = 0, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-Program aborted at tick 0
---- BEGIN LIBC BACKTRACE ---
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z15print_backtracev+0x30)[0x5608ba566490]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z12abortHandleri+0x4e)[0x5608ba57925e]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f105eb10420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f105e0a500b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f105e084859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f105e084729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f105e095fd6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN9FullO3CPUI9O3CPUImplEC1EP16DerivO3CPUParams+0x1b97)[0x5608ba642517]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_ZN16DerivO3CPUParams6createEv+0x13c)[0x5608ba60597c]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0xa95b93)[0x5608baa28b93]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(+0x639a9e)[0x5608ba5cca9e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7a33)[0x7f105ec15353]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f105ec144f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f105ec144f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f105ec16bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f105ec141cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6bd9)[0x7f105ec144f9]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f105ec16bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f105ec16d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5e84)[0x7f105ec137a4]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f105ec16bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x68ab)[0x7f105ec141cb]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x7e6)[0x7f105ec16bd6]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x1a)[0x7f105ec16d8a]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(+0x10403e)[0x7f105ec3103e]
-/data/home/med14/miniconda2/envs/py27/lib/libpython2.7.so.1.0(PyRun_StringFlags+0x66)[0x7f105ec31ed6]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_Z6m5MainiPPc+0x8b)[0x5608ba576eeb]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(main+0x47)[0x5608ba40a3f7]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f105e086083]
-/data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt(_start+0x2e)[0x5608ba42eade]
---- END LIBC BACKTRACE ---
-warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
-gem5 Simulator System.  http://gem5.org
-gem5 is copyrighted software; use the --copyright option for details.
-
-gem5 compiled Mar 26 2026 04:14:15
-gem5 started Mar 27 2026 04:59:50
-gem5 executing on ARCH-750, pid 3594293
-command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=10000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
-
-info: Standard input is not a terminal, disabling listeners.
-**********
-info: Configure for DerivO3CPU. needsTSO=1; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
-**********
-Global frequency set at 1000000000000 ticks per second
-warn: x86 cpuid family 0x0000: unimplemented function 13
-Info: simulation uses threatModel: Spectre; needsTSO=1
-applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
-warn: Sockets disabled, not accepting gdb connections
-warn: x86 cpuid family 0x0000: unimplemented function 13
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+Exiting @ tick 33297000 because exiting with last active thread context
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
 warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
 warn: ignoring syscall mprotect(...)
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
 info: Increasing stack size by one page.
-info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-info: Entering event queue @ 0.  Starting simulation...
-**** REAL SIMULATION ****
-warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-Exiting @ tick 38713500 because exiting with last active thread context
-Exiting @ tick 38565000 because exiting with last active thread context
+warn: x86 cpuid family 0x0000: unimplemented function 13
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
 info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
 warn: ignoring syscall mprotect(...)
 warn: ignoring syscall mprotect(...)
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-warn: x86 cpuid family 0x0000: unimplemented function 13
-info: Entering event queue @ 0.  Starting simulation...
-**** REAL SIMULATION ****
-warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
-warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
 warn: ignoring syscall mprotect(...)
-info: Increasing stack size by one page.
 warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
-info: Increasing stack size by one page.
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+Exiting @ tick 38287000 because exiting with last active thread context
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
 warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
 info: Entering event queue @ 0.  Starting simulation...
 **** REAL SIMULATION ****
 warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
 warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+Exiting @ tick 35396500 because exiting with last active thread context
 warn: ignoring syscall mprotect(...)
+Exiting @ tick 41276500 because exiting with last active thread context
+info: Increasing stack size by one page.
 info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
-info: Increasing stack size by one page.
 warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
 warn: ignoring syscall mprotect(...)
-Exiting @ tick 33567000 because exiting with last active thread context
 warn: ignoring syscall mprotect(...)
-Exiting @ tick 36570000 because exiting with last active thread context
-Exiting @ tick 33516500 because exiting with last active thread context
-Exiting @ tick 36480000 because exiting with last active thread context
 warn: ignoring syscall mprotect(...)
-Exiting @ tick 67110000 because exiting with last active thread context
-Exiting @ tick 67067000 because exiting with last active thread context
-Exiting @ tick 62821000 because exiting with last active thread context
-Exiting @ tick 62556500 because exiting with last active thread context
-Exiting @ tick 129552000 because exiting with last active thread context
-Exiting @ tick 128499500 because exiting with last active thread context
+Exiting @ tick 36470500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 36287500 because exiting with last active thread context
+Exiting @ tick 66320500 because exiting with last active thread context
+Exiting @ tick 68913000 because exiting with last active thread context
+Exiting @ tick 71542500 because exiting with last active thread context
+Exiting @ tick 66890000 because exiting with last active thread context
+Exiting @ tick 61270000 because exiting with last active thread context
+Exiting @ tick 64380000 because exiting with last active thread context
+Exiting @ tick 162070000 because exiting with last active thread context
+Exiting @ tick 66729000 because exiting with last active thread context
+Exiting @ tick 127653000 because exiting with last active thread context
+Exiting @ tick 218437500 because exiting with last active thread context
+Exiting @ tick 131113000 because exiting with last active thread context
+Exiting @ tick 62289000 because exiting with last active thread context
+Exiting @ tick 62141500 because exiting with last active thread context
+Exiting @ tick 129194000 because exiting with last active thread context
+Exiting @ tick 127957500 because exiting with last active thread context
 All simulations complete

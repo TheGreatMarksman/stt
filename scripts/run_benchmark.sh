@@ -45,6 +45,7 @@ echo "THREAT_MODEL:      $THREAT_MODEL"
 echo "STT_VALUE:      $STT_VALUE"
 echo "OUTPUT_DIR:  $OUTPUT_DIR"
 
+# STT must be enabled if implicit_channel is enabled
 $GEM5_PATH/build/X86_MESI_Two_Level/gem5.opt \
     --outdir=$OUTPUT_DIR \
     $GEM5_PATH/configs/example/se.py \
@@ -52,9 +53,9 @@ $GEM5_PATH/build/X86_MESI_Two_Level/gem5.opt \
     --num-cpus=1 --mem-size=4GB \
     --l1d_size=64kB --l1i_size=32kB --l2_size=2MB \
     --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 \
-    --cpu-type=DerivO3CPU --needsTSO=1 --threat_model=$THREAT_MODEL \
+    --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=$THREAT_MODEL \
     --caches --l2cache \
-    --STT=$STT_VALUE --implicit_channel=1 \
+    --STT=$STT_VALUE --implicit_channel=$STT_VALUE \
     --num-dirs=1 --ruby --maxinsts=2000000000 \
     --network=simple --topology=Mesh_XY --mesh-rows=1 \
     --moreTransmitInsts=0 --ifPrintROB=0 \

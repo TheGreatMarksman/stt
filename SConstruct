@@ -362,10 +362,16 @@ if main['GCC'] or main['CLANG']:
 
     # Treat warnings as errors but white list some warnings that we
     # want to allow (e.g., deprecation warnings).
-    main.Append(CCFLAGS=['-Werror',
-                         '-Wno-error=deprecated-declarations',
-                         '-Wno-error=deprecated',
-                        ])
+    main.Append(CCFLAGS=['-Wno-error'])
+    # main.Append(CCFLAGS=['-Wno-error=deprecated-declarations',
+    #                      '-Wno-error=deprecated',
+    #                      '-Wno-error=cast-function-type',
+    #                     '-Wno-error=address-of-packed-member',
+    #                     ])
+    # main.Append(CCFLAGS=['-Werror',
+    #                      '-Wno-error=deprecated-declarations',
+    #                      '-Wno-error=deprecated',
+    #                     ])
 else:
     print termcap.Yellow + termcap.Bold + 'Error' + termcap.Normal,
     print "Don't know what compiler options to use for your compiler."
@@ -851,7 +857,8 @@ if not have_png:
 # we rely on exists since version 2.6.36 of the kernel, but somehow
 # the KVM_API_VERSION does not reflect the change. We test for one of
 # the types as a fall back.
-have_kvm = conf.CheckHeader('linux/kvm.h', '<>')
+have_kvm = False
+# have_kvm = conf.CheckHeader('linux/kvm.h', '<>')
 if not have_kvm:
     print "Info: Compatible header file <linux/kvm.h> not found, " \
         "disabling KVM support."
@@ -1213,15 +1220,15 @@ for variant_path in variant_paths:
 
     if env['EFENCE']:
         env.Append(LIBS=['efence'])
-
-    if env['USE_KVM']:
-        if not have_kvm:
-            print "Warning: Can not enable KVM, host seems to lack KVM support"
-            env['USE_KVM'] = False
-        elif not is_isa_kvm_compatible(env['TARGET_ISA']):
-            print "Info: KVM support disabled due to unsupported host and " \
-                "target ISA combination"
-            env['USE_KVM'] = False
+    env['USE_KVM'] = False
+    # if env['USE_KVM']:
+    #     if not have_kvm:
+    #         print "Warning: Can not enable KVM, host seems to lack KVM support"
+    #         env['USE_KVM'] = False
+    #     elif not is_isa_kvm_compatible(env['TARGET_ISA']):
+    #         print "Info: KVM support disabled due to unsupported host and " \
+    #             "target ISA combination"
+    #         env['USE_KVM'] = False
 
     if env['USE_TUNTAP']:
         if not have_tuntap:

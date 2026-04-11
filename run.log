@@ -1,0 +1,1049 @@
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/CCa'
+gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+make: Leaving directory '/data/home/med14/stt/microbenchmark/CCa'
+Running CCa with threat model UnsafeBaseline and STT value 0...
+Skipping CCa with UnsafeBaseline and STT=1 (invalid configuration)
+Running CCa with threat model Spectre and STT value 0...
+Running CCa with threat model Spectre and STT value 1...
+Running CCa with threat model Futuristic and STT value 0...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running CCa with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/CCl'
+gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCa
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCa
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Spectre/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCa
+GEM5_PATH:   /data/home/med14/stt
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+BENCHMARK:   CCa
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+THREAT_MODEL:      Spectre
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Futuristic/STT_0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCa
+BINARY:      /data/home/med14/stt/microbenchmark/CCa/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/CCa/Futuristic/STT_1
+make: Leaving directory '/data/home/med14/stt/microbenchmark/CCl'
+Running CCl with threat model UnsafeBaseline and STT value 0...
+Skipping CCl with UnsafeBaseline and STT=1 (invalid configuration)
+Running CCl with threat model Spectre and STT value 0...
+Running CCl with threat model Spectre and STT value 1...
+Running CCl with threat model Futuristic and STT value 0...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running CCl with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/DP1f'
+gcc -O2 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCl
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+GEM5_PATH:   /data/home/med14/stt
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0
+BENCHMARK:   CCl
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   CCl
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+BENCHMARK:   CCl
+THREAT_MODEL:      Futuristic
+GEM5_PATH:   /data/home/med14/stt
+STT_VALUE:      0
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+BENCHMARK:   CCl
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Futuristic/STT_0
+BINARY:      /data/home/med14/stt/microbenchmark/CCl/bench.X86
+THREAT_MODEL:      Spectre
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Futuristic/STT_1
+OUTPUT_DIR:  /data/home/med14/stt/output/CCl/Spectre/STT_1
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619564
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619566
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619570
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619562
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619567
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCa/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCa/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+make: Leaving directory '/data/home/med14/stt/microbenchmark/DP1f'
+Running DP1f with threat model UnsafeBaseline and STT value 0...
+Skipping DP1f with UnsafeBaseline and STT=1 (invalid configuration)
+Running DP1f with threat model Spectre and STT value 0...
+Running DP1f with threat model Spectre and STT value 1...
+Running DP1f with threat model Futuristic and STT value 0...
+Running DP1f with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/ED1'
+gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Futuristic/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+GEM5_PATH:   /data/home/med14/stt
+THREAT_MODEL:      Spectre
+BENCHMARK:   DP1f
+STT_VALUE:      0
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_0
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Futuristic/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   DP1f
+BINARY:      /data/home/med14/stt/microbenchmark/DP1f/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/DP1f/Spectre/STT_1
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619611
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619613
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619610
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619606
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619607
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/CCl/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/CCl/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+make: Leaving directory '/data/home/med14/stt/microbenchmark/ED1'
+Running ED1 with threat model UnsafeBaseline and STT value 0...
+Skipping ED1 with UnsafeBaseline and STT=1 (invalid configuration)
+Running ED1 with threat model Spectre and STT value 0...
+Running ED1 with threat model Spectre and STT value 1...
+Running ED1 with threat model Futuristic and STT value 0...
+Running ED1 with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/EI'
+gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   ED1
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   ED1
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   ED1
+BENCHMARK:   ED1
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      Spectre
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Spectre/STT_1
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Futuristic/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   ED1
+BINARY:      /data/home/med14/stt/microbenchmark/ED1/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/ED1/Futuristic/STT_0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619647
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619653
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619651
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619649
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:43
+gem5 executing on ARCH-750, pid 3619652
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/DP1f/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/DP1f/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+make: Leaving directory '/data/home/med14/stt/microbenchmark/EI'
+Running EI with threat model UnsafeBaseline and STT value 0...
+Skipping EI with UnsafeBaseline and STT=1 (invalid configuration)
+Running EI with threat model Spectre and STT value 0...
+Running EI with threat model Spectre and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running EI with threat model Futuristic and STT value 0...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running EI with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+make: Entering directory '/data/home/med14/stt/microbenchmark/MI'
+gcc -O3 -I../ -DMAGIC  bench.c --static --std=c99  -lm -o bench.X86
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Spectre/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Futuristic/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   EI
+BINARY:      /data/home/med14/stt/microbenchmark/EI/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/EI/Futuristic/STT_0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619711
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619714
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619706
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619707
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:44
+gem5 executing on ARCH-750, pid 3619710
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/ED1/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/ED1/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619785
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619783
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619792
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619790
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:46
+gem5 executing on ARCH-750, pid 3619788
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/EI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/EI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+make: Leaving directory '/data/home/med14/stt/microbenchmark/MI'
+Running MI with threat model UnsafeBaseline and STT value 0...
+Skipping MI with UnsafeBaseline and STT=1 (invalid configuration)
+Running MI with threat model Spectre and STT value 0...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running MI with threat model Spectre and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Running MI with threat model Futuristic and STT value 0...
+warn: Sockets disabled, not accepting gdb connections
+Running MI with threat model Futuristic and STT value 1...
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /data/home/med14/miniconda2/envs/py27/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+warn: Sockets disabled, not accepting gdb connections
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   MI
+BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
+THREAT_MODEL:      UnsafeBaseline
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/UnsafeBaseline/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   MI
+BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Futuristic/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   MI
+BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      0
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Spectre/STT_0
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   MI
+BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
+THREAT_MODEL:      Spectre
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Spectre/STT_1
+GEM5_PATH:   /data/home/med14/stt
+BENCHMARK:   MI
+BINARY:      /data/home/med14/stt/microbenchmark/MI/bench.X86
+THREAT_MODEL:      Futuristic
+STT_VALUE:      1
+OUTPUT_DIR:  /data/home/med14/stt/output/MI/Futuristic/STT_1
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619923
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619919
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619914
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/UnsafeBaseline/STT_0 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=UnsafeBaseline --caches --l2cache --STT=0 --implicit_channel=0 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=UnsafeBaseline; STT=0; implicit_channel=0; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619925
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Spectre/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Spectre --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Spectre; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Mar 26 2026 04:14:15
+gem5 started Mar 27 2026 21:20:48
+gem5 executing on ARCH-750, pid 3619929
+command line: /data/home/med14/stt/build/X86_MESI_Two_Level/gem5.opt --outdir=/data/home/med14/stt/output/MI/Futuristic/STT_1 /data/home/med14/stt/configs/example/se.py --cmd=/data/home/med14/stt/microbenchmark/MI/bench.X86 --num-cpus=1 --mem-size=4GB --l1d_size=64kB --l1i_size=32kB --l2_size=2MB --l1d_assoc=8 --l2_assoc=16 --l1i_assoc=4 --cpu-type=DerivO3CPU --needsTSO=0 --threat_model=Futuristic --caches --l2cache --STT=1 --implicit_channel=1 --num-dirs=1 --ruby --maxinsts=2000000000 --network=simple --topology=Mesh_XY --mesh-rows=1 --moreTransmitInsts=0 --ifPrintROB=0
+
+info: Standard input is not a terminal, disabling listeners.
+**********
+info: Configure for DerivO3CPU. needsTSO=0; threat_model=Futuristic; STT=1; implicit_channel=1; moreTransmitInsts=0, printROB=0
+**********
+Global frequency set at 1000000000000 ticks per second
+Info: simulation uses threatModel: UnsafeBaseline; needsTSO=0
+applySTT = 0, implicit_channel = 0, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+Info: simulation uses threatModel: Spectre; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+Info: simulation uses threatModel: Futuristic; needsTSO=0
+applySTT = 1, implicit_channel = 1, ifPrintROB = 0, moreTransmitInsts = 0
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+warn: Sockets disabled, not accepting gdb connections
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+info: Increasing stack size by one page.
+warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+info: Increasing stack size by one page.
+Exiting @ tick 43075500 because exiting with last active thread context
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCa/bench.X86'
+Exiting @ tick 40926500 because exiting with last active thread context
+Exiting @ tick 38466500 because exiting with last active thread context
+Exiting @ tick 38613500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 37514500 because exiting with last active thread context
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: ignoring syscall mprotect(...)
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/CCl/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 43785500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 33663500 because exiting with last active thread context
+Exiting @ tick 32587500 because exiting with last active thread context
+Exiting @ tick 35168500 because exiting with last active thread context
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+Exiting @ tick 33297000 because exiting with last active thread context
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+warn: ignoring syscall mprotect(...)
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/DP1f/bench.X86'
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/ED1/bench.X86'
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/EI/bench.X86'
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+Exiting @ tick 38287000 because exiting with last active thread context
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+warn: x86 cpuid family 0x0000: unimplemented function 13
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+info: Entering event queue @ 0.  Starting simulation...
+**** REAL SIMULATION ****
+warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+warn: ignoring syscall mprotect(...)
+warn: x86 cpuid family 0x0000: unimplemented function 13
+warn: x86 cpuid family 0x0000: unimplemented function 13
+Exiting @ tick 35396500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 41276500 because exiting with last active thread context
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/data/home/med14/stt/microbenchmark/MI/bench.X86'
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 36470500 because exiting with last active thread context
+warn: ignoring syscall mprotect(...)
+warn: ignoring syscall mprotect(...)
+Exiting @ tick 36287500 because exiting with last active thread context
+Exiting @ tick 66320500 because exiting with last active thread context
+Exiting @ tick 68913000 because exiting with last active thread context
+Exiting @ tick 71542500 because exiting with last active thread context
+Exiting @ tick 66890000 because exiting with last active thread context
+Exiting @ tick 61270000 because exiting with last active thread context
+Exiting @ tick 64380000 because exiting with last active thread context
+Exiting @ tick 162070000 because exiting with last active thread context
+Exiting @ tick 66729000 because exiting with last active thread context
+Exiting @ tick 127653000 because exiting with last active thread context
+Exiting @ tick 218437500 because exiting with last active thread context
+Exiting @ tick 131113000 because exiting with last active thread context
+Exiting @ tick 62289000 because exiting with last active thread context
+Exiting @ tick 62141500 because exiting with last active thread context
+Exiting @ tick 129194000 because exiting with last active thread context
+Exiting @ tick 127957500 because exiting with last active thread context
+All simulations complete

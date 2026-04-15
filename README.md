@@ -46,3 +46,32 @@ How to use Gem5 can be found [here](gem5.org).
 
 ### 3) Sample scripts
 We have a few sample scripts in './sample_scripts'.
+
+### CMPT 450
+
+To run:
+* Download and install Miniconda to your home directory
+    * wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    * bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda
+    * `source ~/miniconda/etc/profile.d/conda.sh`
+
+* Create a Python 2.7 environment
+    * `conda create -n py27 python=2.7 -y`
+    * `conda activate py27`
+
+    * Install Scons
+    * `pip install scons==3.1.2`
+
+* Set Paths
+    * `export LIBRARY_PATH=~/miniconda/envs/py27/lib`
+    * `export LD_LIBRARY_PATH=~/miniconda/envs/py27/lib`
+
+* Build Gem5
+    * `scons build/X86_MESI_Two_Level/gem5.opt -j8 --default=X86_PROTOCOL=MESI_Two_Level`
+
+* Build Benchmarks
+    * `cd microbenchmark`
+    * `build`
+    * `cd ..`
+* Run
+    * `./test.sh`

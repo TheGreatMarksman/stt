@@ -3,7 +3,7 @@
 
 #define ASIZE 2048
 #define STEP   256
-#define ITERS   32
+#define ITERS   1000
 
 __attribute__ ((noinline))
 int loop(int zero) {
